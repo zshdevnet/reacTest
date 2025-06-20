@@ -1,11 +1,18 @@
-// File: src/App.js
+// src/App.js
 import React from 'react';
-import Hello from './components/Hello'; // 👈 We import our Hello component
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div>
-      <Hello />
+      <Navbar />
+      {/* Main Content */}
+      <div style={{ minHeight: '90vh', padding: '20px' }}>
+        <h1>Welcome to MyReactApp 🚀</h1>
+        <p>This is your first clean React project!</p>
+      </div>
+      <Footer />
     </div>
   );
 }
